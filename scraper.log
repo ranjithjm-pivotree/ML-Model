@@ -1,0 +1,58 @@
+2026-02-24 11:19:18,546 [INFO] pipeline: Pipeline starting - 1 URL(s) -> ecommerce_dataset.csv
+2026-02-24 11:19:18,552 [INFO] pipeline: >> Starting: https://www.nike.com
+2026-02-24 11:19:18,553 [INFO] pipeline:   [1/4] Behavioral & functional (Playwright)…
+2026-02-24 11:21:03,157 [INFO] pipeline:   [2/4] Performance (PageSpeed API)…
+2026-02-24 11:21:29,101 [INFO] pipeline:   [3/4] Trust signals (BeautifulSoup)…
+2026-02-24 11:21:29,158 [INFO] pipeline:   [4/4] Visual quality (Gemini)…
+2026-02-24 11:21:39,276 [INFO] pipeline:   Done: https://www.nike.com
+2026-02-24 11:21:41,290 [INFO] pipeline: Pipeline complete. Data saved to: ecommerce_dataset.csv
+2026-02-24 11:21:41,297 [INFO] pipeline: 
+Dataset shape: (1, 29)
+2026-02-24 11:21:41,297 [INFO] pipeline: Columns: ['url', 'collected_at', 'popup_count', 'has_guest_checkout', 'click_depth_to_checkout', 'cart_persistence', 'has_search_autosuggest', 'has_quick_buy', 'broken_link_count', 'is_mobile_responsive', 'lcp_ms', 'cls', 'tbt_ms', 'ttfb_ms', 'performance_score', 'has_phone', 'has_email', 'has_address', 'has_return_policy', 'has_privacy_policy', 'has_tos', 'has_social_links', 'has_payment_badges', 'trust_score', 'visual_clutter_score', 'visual_modern_score', 'visual_image_quality', 'visual_overall', 'label']
+2026-02-24 11:25:11,232 [INFO] pipeline: Pipeline starting - 1 URL(s) -> ecommerce_dataset.csv
+2026-02-24 11:25:11,239 [INFO] pipeline: >> Starting: https://www.myntra.com
+2026-02-24 11:25:11,239 [INFO] pipeline:   [1/4] Behavioral & functional (Playwright)…
+2026-02-24 11:25:12,125 [WARNING] collectors.behavioral: [Behavioral] fatal for https://www.myntra.com: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.myntra.com/
+Call log:
+navigating to "https://www.myntra.com/", waiting until "networkidle"
+
+2026-02-24 11:25:12,822 [INFO] pipeline:   [2/4] Performance (PageSpeed API)…
+2026-02-24 11:25:43,136 [WARNING] collectors.performance: [Performance] https://www.myntra.com → HTTPSConnectionPool(host='www.googleapis.com', port=443): Read timed out. (read timeout=30)
+2026-02-24 11:25:43,136 [INFO] pipeline:   [3/4] Trust signals (BeautifulSoup)…
+2026-02-24 11:25:43,136 [INFO] pipeline:   [4/4] Visual quality (Gemini)…
+2026-02-24 11:25:50,916 [INFO] pipeline:   Done: https://www.myntra.com
+2026-02-24 11:25:50,917 [ERROR] pipeline: Failed for https://www.myntra.com: [Errno 13] Permission denied: 'ecommerce_dataset.csv'
+Traceback (most recent call last):
+  File "C:\Users\ranjith.jm\some work\DATA_scraping\main.py", line 115, in run_pipeline
+    save_row(row, output)
+  File "C:\Users\ranjith.jm\some work\DATA_scraping\main.py", line 98, in save_row
+    with open(path, "a", newline="", encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'ecommerce_dataset.csv'
+2026-02-24 11:26:53,281 [INFO] pipeline: Pipeline starting - 1 URL(s) -> ecommerce_dataset.csv
+2026-02-24 11:26:53,285 [INFO] pipeline: >> Starting: https://www.myntra.com
+2026-02-24 11:26:53,286 [INFO] pipeline:   [1/4] Behavioral & functional (Playwright)…
+2026-02-24 11:26:54,139 [WARNING] collectors.behavioral: [Behavioral] fatal for https://www.myntra.com: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.myntra.com/
+Call log:
+navigating to "https://www.myntra.com/", waiting until "networkidle"
+
+2026-02-24 11:26:54,698 [INFO] pipeline:   [2/4] Performance (PageSpeed API)…
+2026-02-24 11:27:25,035 [WARNING] collectors.performance: [Performance] https://www.myntra.com → HTTPSConnectionPool(host='www.googleapis.com', port=443): Read timed out. (read timeout=30)
+2026-02-24 11:27:25,035 [INFO] pipeline:   [3/4] Trust signals (BeautifulSoup)…
+2026-02-24 11:27:25,036 [INFO] pipeline:   [4/4] Visual quality (Gemini)…
+2026-02-24 11:27:31,626 [INFO] pipeline:   Done: https://www.myntra.com
+2026-02-24 11:27:33,644 [INFO] pipeline: Pipeline complete. Data saved to: ecommerce_dataset.csv
+2026-02-24 11:27:33,651 [INFO] pipeline: 
+Dataset shape: (1, 29)
+2026-02-24 11:27:33,651 [INFO] pipeline: Columns: ['url', 'collected_at', 'popup_count', 'has_guest_checkout', 'click_depth_to_checkout', 'cart_persistence', 'has_search_autosuggest', 'has_quick_buy', 'broken_link_count', 'is_mobile_responsive', 'lcp_ms', 'cls', 'tbt_ms', 'ttfb_ms', 'performance_score', 'has_phone', 'has_email', 'has_address', 'has_return_policy', 'has_privacy_policy', 'has_tos', 'has_social_links', 'has_payment_badges', 'trust_score', 'visual_clutter_score', 'visual_modern_score', 'visual_image_quality', 'visual_overall', 'label']
+2026-02-24 11:28:07,579 [INFO] pipeline: Pipeline starting - 1 URL(s) -> ecommerce_dataset.csv
+2026-02-24 11:28:07,583 [INFO] pipeline: >> Starting: https://www.nike.com
+2026-02-24 11:28:07,583 [INFO] pipeline:   [1/4] Behavioral & functional (Playwright)…
+2026-02-24 11:30:09,445 [INFO] pipeline:   [2/4] Performance (PageSpeed API)…
+2026-02-24 11:30:34,563 [INFO] pipeline:   [3/4] Trust signals (BeautifulSoup)…
+2026-02-24 11:30:34,582 [INFO] pipeline:   [4/4] Visual quality (Gemini)…
+2026-02-24 11:30:41,687 [INFO] pipeline:   Done: https://www.nike.com
+2026-02-24 11:30:43,692 [INFO] pipeline: Pipeline complete. Data saved to: ecommerce_dataset.csv
+2026-02-24 11:30:43,696 [INFO] pipeline: 
+Dataset shape: (2, 29)
+2026-02-24 11:30:43,696 [INFO] pipeline: Columns: ['url', 'collected_at', 'popup_count', 'has_guest_checkout', 'click_depth_to_checkout', 'cart_persistence', 'has_search_autosuggest', 'has_quick_buy', 'broken_link_count', 'is_mobile_responsive', 'lcp_ms', 'cls', 'tbt_ms', 'ttfb_ms', 'performance_score', 'has_phone', 'has_email', 'has_address', 'has_return_policy', 'has_privacy_policy', 'has_tos', 'has_social_links', 'has_payment_badges', 'trust_score', 'visual_clutter_score', 'visual_modern_score', 'visual_image_quality', 'visual_overall', 'label']
