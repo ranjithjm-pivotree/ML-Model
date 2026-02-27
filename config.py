@@ -6,8 +6,8 @@ Set your API keys here or via environment variables.
 import os
 
 # ── API Keys ──────────────────────────────────────────────────────────────────
-PAGESPEED_API_KEY = os.getenv("PAGESPEED_API_KEY", "AIzaSyDQA-4swGWir8Xnn7Z0Ld9QwBsOKqgtfWA")
-GEMINI_API_KEY    = os.getenv("GEMINI_API_KEY",    "AIzaSyDQA-4swGWir8Xnn7Z0Ld9QwBsOKqgtfWA")
+PAGESPEED_API_KEY = os.getenv("PAGESPEED_API_KEY", "Your-API-KEY")
+GEMINI_API_KEY    = os.getenv("GEMINI_API_KEY",    "Your-API-KEY")
 
 # ── Playwright Settings ────────────────────────────────────────────────────────
 HEADLESS          = True          # Set False to watch the browser during debugging
